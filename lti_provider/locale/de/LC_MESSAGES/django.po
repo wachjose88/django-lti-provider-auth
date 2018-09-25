@@ -1,0 +1,90 @@
+# django-lti-provider-auth.
+# Copyright (c) 2018 Josef Wachtler
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-lti-provider-auth 1\n"
+"Report-Msgid-Bugs-To: Josef Wachtler\n"
+"POT-Creation-Date: 2017-09-18 17:04+0200\n"
+"PO-Revision-Date: 2017-09-18 17:15+0200\n"
+"Last-Translator: Josef Wachtler <josef.wachtler@gmail.com>\n"
+"Language-Team: Josef Wachtler <josef.wachtler@gmail.com>\n"
+"Language: de-AT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:16
+msgid "LTI Provider"
+msgstr "LTI Provider"
+
+#: field_validators.py:29
+#, python-format
+msgid "%(value)s contains unsave characters."
+msgstr "%(value)s enthält unsichere Zeichen."
+
+#: field_validators.py:39
+#, python-format
+msgid "%(value)s characters are too much. Max length: 30"
+msgstr "%(value)s Zeichen sind zu viel. Maximale Länge: 30"
+
+#: field_validators.py:45
+#, python-format
+msgid "%(value)s characters are too few. Min length: 20"
+msgstr "%(value)s Zeichen sind zu wenig. Minimale Länge: 20"
+
+#: models.py:22
+msgid "Key"
+msgstr "Schlüssel"
+
+#: models.py:26
+msgid "Secret"
+msgstr "Geheimnis"
+
+#: models.py:29
+msgid "User"
+msgstr "Benutzer"
+
+#: models.py:35 models.py:40
+msgid "Consumer"
+msgstr "Consumer"
+
+#: models.py:36
+msgid "Consumers"
+msgstr "Consumers"
+
+#: models.py:42
+msgid "Timestamp"
+msgstr "Timestamp"
+
+#: models.py:43
+msgid "Nonce"
+msgstr "Nonce"
+
+#: models.py:50
+msgid "Timestamp and Nonce"
+msgstr "Timestamp und Nonce"
+
+#: models.py:51
+msgid "Timestamps and Nonces"
+msgstr "Timestamps und Nonces"
