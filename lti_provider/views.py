@@ -94,16 +94,16 @@ def lti_launch(request):
             ps = settings.LTI_PROVIDER['PARAMETERS_TO_VIEW']
             for p in ps:
                 ok = True
-                ap = []
+                ap = {}
                 for pn in p[0]:
                     gp = tool_provider.get_custom_param(pn)
-                    ap.append(gp)
+                    ap[pn] = gp
                     if not gp:
                         ok = False
                 if ok:
                     try:
                         return HttpResponseRedirect(reverse(
-                            p[1], args=ap))
+                            p[1], kwargs=ap))
                     except:
                         pass
             default = settings.LTI_PROVIDER['DEFAULT_VIEW']

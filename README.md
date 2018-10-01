@@ -58,7 +58,9 @@ The most important parts of the configuration are DEFAULT_VIEW, FAILED_VIEW and 
 
 * DEFAULT_VIEW: If no parameter is given by the LTI request this view is used as the goal of the redirection. It is a tuple where the first parameter is the name of the view and the second parameter is a tuple of parameters for the view or None.
 * FAILED_VIEW: If something goes wrong this view is used. It is configured using the same format of a tuple as the DEFAULT_VIEW.
-* PARAMETERS_TO_VIEW: It is possible to provide custom parameters through the LTI request. Depending on these parameters it is possible to redirect to a specific view. It should be a list of tuples. The first element of this tuple is a tuple of parameter names. The second element is the name of the view which is called if all of the listed parameter names are present in the LTI request. The values of the parameters are passed to the view while reversing it in the given order.
+* PARAMETERS_TO_VIEW: It is possible to provide custom parameters through the LTI request. Depending on these parameters it is possible to redirect to a specific view. It should be a list of tuples. The first element of this tuple is a tuple of parameter names. The second element is the name of the view which is called if all of the listed parameter names are present in the LTI request. The values of the parameters are passed to the view while reversing it as keyword arguments using the name of the parameter as key.
+
+The optional config entry HOOK_AFTER_USER_CREATION is the name of a function which takes a django user object as a parameter. This function is called after the creation of a new user. 
 
 The LTI provider requires the following parameters in the LTI request:
 
