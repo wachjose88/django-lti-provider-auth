@@ -16,7 +16,7 @@ setuptools.setup(
     python_requires='>=3.4',
     install_requires=[
        'lti>=0.9.2',
-       'django>=1.11,<2.0'
+       'django>=1.11.15,<2.0'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
