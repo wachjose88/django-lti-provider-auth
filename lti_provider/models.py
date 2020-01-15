@@ -47,7 +47,9 @@ class Consumer(models.Model):
                               verbose_name=_('Secret'),
                               validators=[validate_oauth_chars,
                                           validate_oauth_length])
-    user = models.ForeignKey(User, verbose_name=_('User'))
+    user = models.ForeignKey(User,
+                             on_delete=models.CASCADE,
+                             verbose_name=_('User'))
 
     def __str__(self):
         """
@@ -70,7 +72,9 @@ class TimestampAndNonce(models.Model):
         - timestamp -- time of the request as int
         - nonce -- a string related to this timestamp only
     """
-    consumer = models.ForeignKey(Consumer, verbose_name=_('Consumer'))
+    consumer = models.ForeignKey(Consumer,
+                                 on_delete=models.CASCADE,
+                                 verbose_name=_('Consumer'))
 
     timestamp = models.IntegerField(verbose_name=_('Timestamp'))
     nonce = models.CharField(max_length=128, verbose_name=_('Nonce'))

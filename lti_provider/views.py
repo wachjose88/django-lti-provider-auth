@@ -29,7 +29,7 @@ from lti import ToolConfig
 from lti.contrib.django import DjangoToolProvider
 from django.http import HttpResponse, HttpResponseBadRequest, \
     HttpResponseRedirect
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login, logout
 from django.conf import settings
