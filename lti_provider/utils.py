@@ -23,7 +23,7 @@
 This module provides some helper functions for the LTI Provider.
 """
 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.core.exceptions import ImproperlyConfigured
 
 
