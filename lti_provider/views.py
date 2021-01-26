@@ -78,7 +78,7 @@ def lti_launch(request):
     Keyword arguments:
         - request -- calling HttpRequest
     """
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         logout(request)
 
     try:
