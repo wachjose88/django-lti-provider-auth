@@ -3,7 +3,7 @@ This is a highly configurable LTI provider for Django projects with authenticati
 
 ## Requirements
 * python>=3.4
-* Django>=1.11,<2.3
+* Django>=3.2.0,<3.3
 * lti>=0.9.2
 
 ## Install
