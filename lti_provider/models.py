@@ -24,7 +24,7 @@ This module provides all Django-Database-Models of the lti_provider-App.
 """
 
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from lti_provider.field_validators import validate_oauth_chars, \
                                           validate_oauth_length
@@ -47,7 +47,7 @@ class Consumer(models.Model):
                               verbose_name=_('Secret'),
                               validators=[validate_oauth_chars,
                                           validate_oauth_length])
-    user = models.ForeignKey(User,
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              on_delete=models.CASCADE,
                              verbose_name=_('User'))
 
