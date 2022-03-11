@@ -27,10 +27,12 @@ from hashlib import sha1
 
 from django.core.exceptions import PermissionDenied
 from django.conf import settings
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 
 from lti_provider.utils import get_by_py_path
 from lti_provider.validators import LTIValidator
+
+User = get_user_model()
 
 
 class LTIAuthBackend(object):
