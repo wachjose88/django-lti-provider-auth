@@ -25,7 +25,7 @@ This module provides all Django-Database-Models of the lti_provider-App.
 
 from django.db import models
 from django.conf import settings
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from lti_provider.field_validators import validate_oauth_chars, \
                                           validate_oauth_length
 
