@@ -27,7 +27,7 @@ import logging
 from oauthlib.oauth1.rfc5849.utils import UNICODE_ASCII_CHARACTER_SET
 
 from django.core.exceptions import ValidationError
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 # Get an instance of a logger
 logger = logging.getLogger('LTI.lti_provider')

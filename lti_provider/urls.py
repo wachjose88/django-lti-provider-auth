@@ -23,13 +23,13 @@
 This module designs the urls of the lti_provider App.
 """
 
-from django.conf.urls import url
+from django.urls import re_path
 from lti_provider.views import tool_config, lti_launch
 
 
 urlpatterns = [
-    url(r'^config.xml$',
+    re_path(r'^config.xml$',
         tool_config, name='lti_provider.views.tool_config'),
-    url(r'^launch$',
+    re_path(r'^launch$',
         lti_launch, name='lti_provider.views.lti_launch'),
 ]
