@@ -88,7 +88,7 @@ Finally add the URL configuration to your main urls.py:
 ```
 urlpatterns = [
     ...
-    url(r'^lti/', include('lti_provider.urls')),
+    re_path(r'^lti/', include('lti_provider.urls')),
     ...
 ]
 ```
