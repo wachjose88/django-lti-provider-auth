@@ -1,9 +1,13 @@
 # Django LTI Provider with Authentication
-This is a highly configurable LTI provider for Django projects with authentication. It is based on python3, python lti library and Django LTS. This library provides a Django app which implements a full LTI provider and could be used to let a user log in from another learning platform to your Django project. It handles the complete authentication of the user and after that it redirects to a view according to a configuration.
+This is a highly configurable LTI provider for Django projects with authentication. 
+It is based on python3, python lti library and Django LTS. This library provides a 
+Django app which implements a full LTI provider and could be used to let a user log in 
+from another learning platform to your Django project. It handles the complete authentication 
+of the user and after that it redirects to a view according to a configuration.
 
 ## Requirements
 * python>=3.4
-* Django>=3.2.0,<3.3
+* Django>=4.2.0,<4.3
 * lti>=0.9.2
 
 ## Install
