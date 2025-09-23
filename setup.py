@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django-lti-provider-auth",
-    version="0.1.0",
+    version="0.2.0",
     author="Josef Wachtler",
     author_email="josef.wachtler@gmail.com",
     description="This is a highly configurable LTI provider for django projects.",
@@ -13,10 +13,10 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/wachjose88/django-lti-provider-auth",
     packages=setuptools.find_packages(),
-    python_requires='>=3.4',
+    python_requires='>=3.10',
     install_requires=[
        'lti>=0.9.2',
-       'django>=4.2.0,<4.3'
+       'django>=5.2.0,<5.3'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

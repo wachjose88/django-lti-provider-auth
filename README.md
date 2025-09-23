@@ -6,8 +6,8 @@ from another learning platform to your Django project. It handles the complete a
 of the user and after that it redirects to a view according to a configuration.
 
 ## Requirements
-* python>=3.4
-* Django>=4.2.0,<4.3
+* python>=3.10
+* Django>=5.2.0,<5.3
 * lti>=0.9.2
 
 ## Install
